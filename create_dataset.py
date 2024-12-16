@@ -4,6 +4,11 @@ import pickle
 import mediapipe as mp
 import cv2
 
+import absl.logging
+absl.logging.set_verbosity(absl.logging.INFO)
+
+
+
 DATA_DIR = './data'
 
 mp_hands = mp.solutions.hands

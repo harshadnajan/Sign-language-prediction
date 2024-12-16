@@ -2,12 +2,16 @@ import os
 
 import cv2
 
+import absl.logging
+absl.logging.set_verbosity(absl.logging.INFO)
+
+
 
 DATA_DIR = './data'
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-number_of_classes = 3
+number_of_classes = 4
 dataset_size = 100
 
 cap = cv2.VideoCapture(0)
